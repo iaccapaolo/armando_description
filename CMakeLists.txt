@@ -28,4 +28,8 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+# dipendenze per per il nodo teleop per controllare il braccio
+install(PROGRAMS scripts/armando_teleop.py
+  DESTINATION lib/${PROJECT_NAME})
+
 ament_package()

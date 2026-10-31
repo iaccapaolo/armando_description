@@ -116,6 +116,10 @@ def generate_launch_description():
             '/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
             '/world/armando_workbench/dynamic_pose/info@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
             
+            # node per la seconda camera 
+            '/wrist_camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image',
+            '/wrist_camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
+            
             # Bridge per i comandi di presa 
             '/gripper/attach_a@std_msgs/msg/Empty@gz.msgs.Empty',
             '/gripper/detach_a@std_msgs/msg/Empty@gz.msgs.Empty',
